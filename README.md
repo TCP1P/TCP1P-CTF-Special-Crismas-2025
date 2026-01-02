@@ -57,4 +57,3 @@ The CTF CI/CD supports **automatic challenge updates** when you push changes to 
    - Edit `challenge.yml` → Metadata update (~3 seconds)
    - Update `dist/files.zip` → Attachment update (~2 seconds)
    - Modify `src/app.py` → Full redeploy (~10 seconds)
-# TCP1P-CTF-Special-Crismas-2025

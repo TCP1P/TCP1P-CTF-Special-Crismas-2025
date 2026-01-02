@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/master/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "hypocrite"
+author: "repl"
+description: |
+  (ignore-this)
+  those who (hypocrites) say one thing and do another? is that your morality?
+  but there aren't any. All of our traditional notions of morality, of good and evil, are based on either lies or self-deception.
+  reshape our lives based on knowledge of brutal truths. 
+  no truths but the ones we create, no absolute basis for morality.
+  - Beyond Good and Evil
+  (read-this-instead)
+  report in /report, browser is firefox.
+  do what you need. any ways to get the flag is acceptable.
+
+  Start challenge from: https://{{.host}}/{{.slug}}
+
+type: "StaticAttachment"
+value: 1000
+
+flags:
+  - "XMAS{lies_and_deception_basic_charset_byp}"
+
+
+provide: "./dist"
+
+dashboard:
+  type: "compose"
+  config: "./src/docker-compose.yaml"

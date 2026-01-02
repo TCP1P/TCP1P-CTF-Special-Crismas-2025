@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/master/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "Dark Grey"
+author: "kcnewbie"
+description: |
+  <p>Pada tahun 2014 sebuah pulau padat penduduk di Indonesia, sebuah zona permanen terbentuk pada awal tahun 2000-an akibat muntahan abu-abu yang tak henti dari dalam tanah, buah dari keteledoran industri.</p>
+
+  <p>Sebuah aliran pembuangan besar kini memotong lanskap untuk mengalirkan material dari zona tersebut ke sungai yang kini dihubungkan oleh Jembatan melintang, disitu Anton sedang berlibur ke daerah tersebut.</p>
+
+  <p>Di atas jembatan tampak dari jauh sebuah kubah indah untuk orang memanjatkan doa. Lapuk namun masih bisa digunakan. namun terdapat sebuah area yang didedikasikan bukan untuk yang hidup, melainkan untuk peristirahatan terakhir, dimana desa itu? dan berapa jarak garis lurus anton ke tempat tersebut?</p>
+
+  <p>XMAS{XXXXXX, XXXx}</p>
+
+type: "StaticAttachment"
+value: 1000
+
+flags:
+  - "XMAS{Besuki, 360m}"

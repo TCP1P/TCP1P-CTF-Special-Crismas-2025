@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/dimasma0305/gzcli/refs/heads/master/internal/template/templates/others/ctf-template/.gzctf/challenge.schema.yaml
+
+name: "y33tflag"
+author: "Etynso"
+
+description: |
+  I yeeted the flag, that's it really :shrug:
+
+type: "StaticAttachment" 
+value: 1000
+
+flags:
+  - "XMAS{this_is_actually_an_exercise_problem_from_the_book_An-Introduction-To-Mathematical-Cryptography_by_silverman}"
+
+provide: "./dist"

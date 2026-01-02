@@ -1,0 +1,14 @@
+services:
+  mini-auditor:
+    build: .
+    restart: on-failure
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "256M"
+        reservations:
+          cpus: "0.25"
+          memory: "128M"
+    ports:
+      - 8142:5000

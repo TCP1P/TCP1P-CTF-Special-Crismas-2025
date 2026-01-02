@@ -1,0 +1,18 @@
+name: "Santa dari Cancun"
+author: "KudaLiar"
+category: Blockchain
+description: |
+ Santa kira penyimpanan sementara itu aman karena lebih hemat biaya, emang iya?
+
+ Start challenge from: https://{{.host}}/{{.slug}}
+
+type: "StaticAttachment"
+value: 1000
+flags:
+  - "XMAS{Tr4nsi3nt_r33nt54nc3ment}"
+
+provide: "./dist"
+
+dashboard:
+  type: "compose"
+  config: "./src/docker-compose.yml"

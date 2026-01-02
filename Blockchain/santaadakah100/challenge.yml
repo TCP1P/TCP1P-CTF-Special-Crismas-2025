@@ -1,0 +1,18 @@
+name: "Santa, adakah 100?"
+author: "KudaLiar"
+category: Blockchain
+description: |
+  Santa kira uangnya aman, ayo kita ambil~
+
+  Start challenge from: https://{{.host}}/{{.slug}}
+
+type: "StaticAttachment"
+value: 1000
+flags:
+  - "XMAS{R3ad_0nly_R33ntr4ncy_1s_R34l}"
+
+provide: "./dist"
+
+dashboard:
+  type: "compose"
+  config: "./src/docker-compose.yml"

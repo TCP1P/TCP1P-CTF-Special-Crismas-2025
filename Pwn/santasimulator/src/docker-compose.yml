@@ -1,0 +1,5 @@
+services:
+  chall:
+    build: .
+    ports:
+      - "8011:5000"
