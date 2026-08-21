@@ -1,0 +1,16 @@
+name: y33tflag
+author: Etynso
+description: 'I yeeted the flag, that''s it really :shrug:
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/y33tflag).'
+type: StaticAttachment
+category: Crypto
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- XMAS{this_is_actually_an_exercise_problem_from_the_book_An-Introduction-To-Mathematical-Cryptography_by_silverman}
+provide: dist

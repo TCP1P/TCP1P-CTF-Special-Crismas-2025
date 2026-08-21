@@ -1,0 +1,102 @@
+{
+  "sourceRepository": "TCP1P/TCP1P-CTF-Special-Crismas-2025",
+  "targetRepository": "TCP1P/TCP1P-CTF-Special-Crismas-2025",
+  "private": false,
+  "events": [
+    "TCP1P CTF Special Christmas 2025"
+  ],
+  "challenges": [
+    {
+      "name": "Santa, adakah 100?",
+      "category": "Blockchain",
+      "source": "Blockchain/santaadakah100/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santaadakah100",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/santa-adakah-100/challenge.yaml"
+    },
+    {
+      "name": "Santa dari Cancun",
+      "category": "Blockchain",
+      "source": "Blockchain/santadaricancun/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santadaricancun",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Blockchain/santa-dari-cancun/challenge.yaml"
+    },
+    {
+      "name": "Letter Times",
+      "category": "Crypto",
+      "source": "Crypto/lettertimes/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/lettertimes",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/letter-times/challenge.yaml"
+    },
+    {
+      "name": "y33tflag",
+      "category": "Crypto",
+      "source": "Crypto/y33tflag/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/y33tflag",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Crypto/y33tflag/challenge.yaml"
+    },
+    {
+      "name": "mini-auditor",
+      "category": "Misc",
+      "source": "Misc/mini-auditor/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Misc/mini-auditor",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Misc/mini-auditor/challenge.yaml"
+    },
+    {
+      "name": "Dark Grey",
+      "category": "OSINT",
+      "source": "OSINT/darkgrey/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/OSINT/darkgrey",
+      "type": "StaticAttachment",
+      "warnings": [
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/OSINT/dark-grey/challenge.yaml"
+    },
+    {
+      "name": "dna",
+      "category": "Pwn",
+      "source": "Pwn/dna/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/dna",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/dna/challenge.yaml"
+    },
+    {
+      "name": "Out Of My League",
+      "category": "Pwn",
+      "source": "Pwn/outofmyleague/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/outofmyleague",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/out-of-my-league/challenge.yaml"
+    },
+    {
+      "name": "santa simulator",
+      "category": "Pwn",
+      "source": "Pwn/santasimulator/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/santasimulator",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Pwn/santa-simulator/challenge.yaml"
+    },
+    {
+      "name": "hypocrite",
+      "category": "Web",
+      "source": "Web/hypocrite/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Web/hypocrite",
+      "type": "StaticAttachment",
+      "warnings": [],
+      "manifest": "Jeopardy/Web/hypocrite/challenge.yaml"
+    }
+  ]
+}

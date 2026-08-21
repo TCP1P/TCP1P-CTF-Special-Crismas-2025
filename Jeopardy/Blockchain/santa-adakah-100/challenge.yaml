@@ -1,0 +1,19 @@
+name: Santa, adakah 100?
+author: KudaLiar
+description: 'Santa kira uangnya aman, ayo kita ambil~
+
+
+  Start challenge from: https://{{.host}}/{{.slug}}
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santaadakah100).'
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- XMAS{R3ad_0nly_R33ntr4ncy_1s_R34l}
+provide: dist

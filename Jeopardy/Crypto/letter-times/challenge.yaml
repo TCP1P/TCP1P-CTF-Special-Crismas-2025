@@ -1,0 +1,16 @@
+name: Letter Times
+author: .effie
+description: 'it''s dead simplee!! i can do this all year _round_!
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/lettertimes).'
+type: StaticAttachment
+category: Crypto
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- XMAS{G07_M0l3_pr08l3m5?__C4ll_Av094dr0_47_6.02_x_10^23}
+provide: dist

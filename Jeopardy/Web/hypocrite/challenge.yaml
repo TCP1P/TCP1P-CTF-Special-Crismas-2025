@@ -1,0 +1,11 @@
+name: hypocrite
+author: repl
+description: "(ignore-this)\nthose who (hypocrites) say one thing and do another? is that your morality?\nbut there aren't any. All of our traditional notions of morality, of good and evil, are based on either lies or self-deception.\nreshape our lives based on knowledge of brutal truths. \nno truths but the ones we create, no absolute basis for morality.\n- Beyond Good and Evil\n(read-this-instead)\nreport in /report, browser is firefox.\ndo what you need. any ways to get the flag is acceptable.\n\nStart challenge from: https://{{.host}}/{{.slug}}\n\n---\nHistorical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Web/hypocrite)."
+type: StaticAttachment
+category: Web
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- XMAS{lies_and_deception_basic_charset_byp}
+provide: dist
