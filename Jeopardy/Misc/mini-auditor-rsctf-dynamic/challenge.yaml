@@ -1,0 +1,22 @@
+name: mini-auditor
+author: koto
+description: 'I tweaked this [calc pyjail](https://2024.imaginaryctf.org/Challenges.html) a bit to make it less intimidating, but it kind of turned into a pretty weird golfing challenge
+
+
+  Start challenge from: https://{{.host}}/{{.slug}}
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Misc/mini-auditor).'
+type: DynamicContainer
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: XMAS{mini_auditor__________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 5000
+  enableTrafficCapture: false

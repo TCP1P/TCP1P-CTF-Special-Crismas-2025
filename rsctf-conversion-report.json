@@ -11,18 +11,30 @@
       "category": "Blockchain",
       "source": "Blockchain/santaadakah100/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santaadakah100",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/santa-adakah-100/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{santa_adakah[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/santa-adakah-100-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Santa dari Cancun",
       "category": "Blockchain",
       "source": "Blockchain/santadaricancun/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santadaricancun",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Blockchain/santa-dari-cancun/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{santa_da[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 2 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Blockchain/santa-dari-cancun-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Letter Times",
@@ -30,6 +42,7 @@
       "source": "Crypto/lettertimes/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/lettertimes",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Crypto/letter-times/challenge.yaml"
     },
@@ -39,6 +52,7 @@
       "source": "Crypto/y33tflag/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Crypto/y33tflag",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Crypto/y33tflag/challenge.yaml"
     },
@@ -47,9 +61,15 @@
       "category": "Misc",
       "source": "Misc/mini-auditor/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Misc/mini-auditor",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Misc/mini-auditor/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{mini_auditor__________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Misc/mini-auditor-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Dark Grey",
@@ -57,6 +77,7 @@
       "source": "OSINT/darkgrey/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/OSINT/darkgrey",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "no player attachment files were present"
       ],
@@ -67,27 +88,45 @@
       "category": "Pwn",
       "source": "Pwn/dna/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/dna",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Pwn/dna/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{dna______________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Pwn/dna-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Out Of My League",
       "category": "Pwn",
       "source": "Pwn/outofmyleague/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/outofmyleague",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Pwn/out-of-my-league/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{out_of_my_league___________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Pwn/out-of-my-league-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "santa simulator",
       "category": "Pwn",
       "source": "Pwn/santasimulator/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Pwn/santasimulator",
-      "type": "StaticAttachment",
-      "warnings": [],
-      "manifest": "Jeopardy/Pwn/santa-simulator/challenge.yaml"
+      "type": "DynamicContainer",
+      "runtimeReason": null,
+      "warnings": [
+        "portable single-service Docker runtime promoted from 'StaticAttachment' to DynamicContainer",
+        "generated per-team flag template 'XMAS{sa[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
+      ],
+      "manifest": "Jeopardy/Pwn/santa-simulator-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "hypocrite",
@@ -95,6 +134,7 @@
       "source": "Web/hypocrite/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Web/hypocrite",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [],
       "manifest": "Jeopardy/Web/hypocrite/challenge.yaml"
     }
