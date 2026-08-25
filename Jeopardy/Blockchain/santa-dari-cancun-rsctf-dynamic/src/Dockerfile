@@ -1,48 +1,24 @@
-FROM ghcr.io/foundry-rs/foundry:latest
+FROM dimasmaualana/eth:latest@sha256:f9ee703e7da03d378d9a4fa70e00825e8a77593a29cf550dc7de5ede78f3ed58
 
-USER root
-RUN apt-get update && \
-    apt-get install -y python3 socat && \
-    rm -rf /var/lib/apt/lists/*
+ENV LAUNCHER_PORT=8080
+ENV EVM_VERSION=cancun
+EXPOSE 8080
 
-RUN useradd -m -u 1001 -s /bin/bash ctf
+# Each RSCTF container belongs to one team. One Gunicorn process with four
+# threads keeps the launcher responsive without the upstream process overhead.
+RUN grep -q -- '--workers 4' /startup/96-start-launcher \
+    && grep -q -- '--threads 8' /startup/96-start-launcher \
+    && sed -i 's/--workers 4/--workers 1/; s/--threads 8/--threads 4/' /startup/96-start-launcher
 
-RUN mkdir -p /home/ctf/chall/src
+COPY deploy/ /home/ctf/
+COPY *.sol /tmp/contracts/
 
-COPY ./Setup.sol /home/ctf/chall/src
-COPY ./GiftDistributor.sol /home/ctf/chall/src
-COPY ./chall.py /home/ctf/chall/src/chall.py
-COPY ./run.sh /home/ctf/chall/src/run.sh
-COPY ./flag.txt /home/ctf/chall/src/flag.txt
+RUN cd /tmp \
+    && forge build --out /home/ctf/compiled \
+    && rm -rf /tmp/contracts
 
-WORKDIR /home/ctf/chall/src
-RUN forge init --force && forge build
-
-RUN chown -R ctf:ctf /home/ctf/chall
-RUN chmod -R 755 /home/ctf/chall
-
-USER ctf
-WORKDIR /home/ctf/chall/src
-
-EXPOSE 8011 8545
-
-CMD ["./run.sh"]
-
-# RSCTF dynamic-flag compatibility layer. The build-time scan records
-# exact marker-bearing files; runtime replacement is therefore bounded
-# to those files instead of walking the image on every team start.
 USER root
 COPY rsctf-entrypoint.sh /usr/local/bin/rsctf-entrypoint
-RUN set -eu; \
-    chmod 0555 /usr/local/bin/rsctf-entrypoint; \
-    : > /etc/rsctf-flag-targets; \
-    for root in /home/ctf/chall/src/flag.txt /home/ctf/chall/src/run.sh /home/ctf/chall/src/chall.py /home/ctf/chall/src /app /src /srv /home /opt /var/www /challenge /chall /ctf /root /usr/src /usr/local/bin /workspace /flag /flag.txt; do \
-      if [ -e "$root" ]; then \
-        find "$root" -xdev -type f ! -path /usr/local/bin/rsctf-entrypoint -exec grep -lF -e RSCTF_DYNAMIC_FLAG_fc1cb2fe57c -e RSCTF_DYNAMIC_FLAG_b4711 {} + >> /etc/rsctf-flag-targets 2>/dev/null || true; \
-      fi; \
-    done; \
-    sort -u /etc/rsctf-flag-targets > /etc/rsctf-flag-targets.sorted; \
-    mv /etc/rsctf-flag-targets.sorted /etc/rsctf-flag-targets; \
-    while IFS= read -r target; do [ -f "$target" ] && chmod a+w "$target"; done < /etc/rsctf-flag-targets
-USER ctf
+RUN chmod 0555 /usr/local/bin/rsctf-entrypoint
 ENTRYPOINT ["/usr/local/bin/rsctf-entrypoint"]
+CMD ["/entrypoint.sh"]

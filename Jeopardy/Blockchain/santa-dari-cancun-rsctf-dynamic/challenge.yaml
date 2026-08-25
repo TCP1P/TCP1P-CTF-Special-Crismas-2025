@@ -3,20 +3,17 @@ author: KudaLiar
 description: 'Santa kira penyimpanan sementara itu aman karena lebih hemat biaya, emang iya?
 
 
-  Start challenge from: https://{{.host}}/{{.slug}}
-
-
   ---
 
   Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025/tree/main/Blockchain/santadaricancun).'
 type: DynamicContainer
 category: Blockchain
-minScoreRate: 0.25
+minScoreRate: 0.01
 difficulty: 5
-disableBloodBonus: false
+disableBloodBonus: true
 flagTemplate: XMAS{santa_da[TEAM_HASH]}
 container:
-  memoryLimit: 128
+  memoryLimit: 256
   cpuCount: 1
-  exposePort: 8011
+  exposePort: 8080
   enableTrafficCapture: false
